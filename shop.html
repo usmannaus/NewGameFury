@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Fury | Shop Now</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./ShopNow/shop.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="./ShopNow/images/logo.png" width="100px"></a> 
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li><a href="./upcoming-games.html">Upcoming Games</a></li>
+            <li><a href="./console.html">Game Consoles</a></li>
+            <li><a href="./games.html">Games</a></li>
+            <li><a href="./shop.html">Shop Now</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+        </ul>
+        <section class="icon-container">
+            <section class="icon" aria-label="User Profile" tabindex="0">
+                <i class="fas fa-user"></i>
+            </section>
+            <section class="icon" aria-label="Cart" tabindex="0">
+                <i class="fas fa-shopping-cart"></i>
+            </section>
+            <section class="icon" aria-label="Search" tabindex="0" id="search-btn">
+                <i class="fas fa-search"></i>
+            </section>
+            <section class="hamburger" aria-label="Menu" tabindex="0">
+                <i class="fas fa-bars"></i>
+            </section>
+        </section>
+        <section class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </section>        
+    </header>
+
+    <main>
+        <h1 class="page-title">Shop Now</h1>
+        <p class="shop-intro">
+            Welcome to Game Fury Store! Find top-rated <br> computer parts and accessories with amazing discounts!
+        </p>
+
+        <section class="shop-container">
+            <!-- Processors Section -->
+            <section class="category-section" id="processors">
+                <h2>Processors</h2>
+        <div class="products-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, auto); gap: 20px;">
+                    <!-- Example processor items -->
+                    <div class="product-card" data-category="Processors" data-name="Intel Core i9" data-price="50000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/core i9.avif" alt="Intel Core i9" />
+                        </div>
+                        <div class="product-info">
+                            <h3>Intel Core i9</h3>
+                            <p class="price">50,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Processors" data-name="AMD Ryzen 9" data-price="48000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/ryzen 9.webp" alt="AMD Ryzen 9" />
+                        </div>
+                        <div class="product-info">
+                            <h3>AMD Ryzen 9</h3>
+                            <p class="price">48,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Processors" data-name="Intel Core i7" data-price="35000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/core i7.png" alt="Intel Core i7" />
+                        </div>
+                        <div class="product-info">
+                            <h3>Intel Core i7</h3>
+                            <p class="price">35,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Processors" data-name="AMD Ryzen 7" data-price="32000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/ryzen 7.jpg" alt="AMD Ryzen 7" />
+                        </div>
+                        <div class="product-info">
+                            <h3>AMD Ryzen 7</h3>
+                            <p class="price">32,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Processors" data-name="Intel Core i5" data-price="25000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/core i5.jpg" alt="Intel Core i5" />
+                        </div>
+                        <div class="product-info">
+                            <h3>Intel Core i5</h3>
+                            <p class="price">25,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Processors" data-name="AMD Ryzen 5" data-price="22000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/ryzen 5.jpg" alt="AMD Ryzen 5" />
+                        </div>
+                        <div class="product-info">
+                            <h3>AMD Ryzen 5</h3>
+                            <p class="price">22,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Graphic Cards Section -->
+            <section class="category-section" id="graphic-cards">
+                <h2>Graphic Cards</h2>
+                <div class="products-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, auto); gap: 20px;">
+                    <!-- Example graphic card items -->
+                    <div class="product-card" data-category="Graphic Cards" data-name="NVIDIA RTX 3080" data-price="120000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/processor 1.jpg" alt="NVIDIA RTX 3080" />
+                        </div>
+                        <div class="product-info">
+                            <h3>NVIDIA RTX 3080</h3>
+                            <p class="price">120,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Graphic Cards" data-name="AMD Radeon RX 6800" data-price="110000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/gc2.jpg" alt="AMD Radeon RX 6800" />
+                        </div>
+                        <div class="product-info">
+                            <h3>AMD Radeon RX 6800</h3>
+                            <p class="price">110,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Graphic Cards" data-name="NVIDIA RTX 3070" data-price="90000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/gc3.jpg" alt="NVIDIA RTX 3070" />
+                        </div>
+                        <div class="product-info">
+                            <h3>NVIDIA RTX 3070</h3>
+                            <p class="price">90,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Graphic Cards" data-name="AMD Radeon RX 6700" data-price="85000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/gc4.jpeg" alt="AMD Radeon RX 6700" />
+                        </div>
+                        <div class="product-info">
+                            <h3>AMD Radeon RX 6700</h3>
+                            <p class="price">85,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Graphic Cards" data-name="NVIDIA GTX 1660" data-price="60000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/gc5.jpg" alt="NVIDIA GTX 1660" />
+                        </div>
+                        <div class="product-info">
+                            <h3>NVIDIA GTX 1660</h3>
+                            <p class="price">60,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Graphic Cards" data-name="AMD Radeon RX 5600" data-price="55000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/gc6.png" alt="AMD Radeon RX 5600" />
+                        </div>
+                        <div class="product-info">
+                            <h3>AMD Radeon RX 5600</h3>
+                            <p class="price">55,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Motherboards Section -->
+            <section class="category-section" id="motherboards">
+                <h2>Motherboards</h2>
+                <div class="products-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, auto); gap: 20px;">
+                    <!-- Example motherboard items -->
+                    <div class="product-card" data-category="Motherboards" data-name="ASUS ROG Strix" data-price="45000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/m1.webp" alt="ASUS ROG Strix" />
+                        </div>
+                        <div class="product-info">
+                            <h3>ASUS ROG Strix</h3>
+                            <p class="price">45,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Motherboards" data-name="MSI MPG" data-price="42000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/m2.jpeg" alt="MSI MPG" />
+                        </div>
+                        <div class="product-info">
+                            <h3>MSI MPG</h3>
+                            <p class="price">42,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Motherboards" data-name="Gigabyte Aorus" data-price="40000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/m3.jpg" alt="Gigabyte Aorus" />
+                        </div>
+                        <div class="product-info">
+                            <h3>Gigabyte Aorus</h3>
+                            <p class="price">40,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Motherboards" data-name="ASRock Phantom" data-price="38000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/m4.jpg" alt="ASRock Phantom" />
+                        </div>
+                        <div class="product-info">
+                            <h3>ASRock Phantom</h3>
+                            <p class="price">38,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Motherboards" data-name="EVGA Z590" data-price="36000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/m5.png" alt="EVGA Z590" />
+                        </div>
+                        <div class="product-info">
+                            <h3>EVGA Z590</h3>
+                            <p class="price">36,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Motherboards" data-name="ASUS Prime" data-price="35000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/m6.jpg" alt="ASUS Prime" />
+                        </div>
+                        <div class="product-info">
+                            <h3>ASUS Prime</h3>
+                            <p class="price">35,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Memory (RAM) Section -->
+            <section class="category-section" id="memory">
+                <h2>Memory (RAM)</h2>
+                <div class="products-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, auto); gap: 20px;">
+                    <!-- Example RAM items -->
+                    <div class="product-card" data-category="Memory" data-name="Corsair Vengeance 16GB" data-price="15000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/ram1.jpg" alt="Corsair Vengeance 16GB" />
+                        </div>
+                        <div class="product-info">
+                            <h3>Corsair Vengeance 16GB</h3>
+                            <p class="price">15,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Memory" data-name="G.Skill Trident Z 16GB" data-price="14000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/ram2.webp" alt="G.Skill Trident Z 16GB" />
+                        </div>
+                        <div class="product-info">
+                            <h3>G.Skill Trident Z 16GB</h3>
+                            <p class="price">14,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Memory" data-name="Kingston HyperX 8GB" data-price="8000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/ram33.webp" alt="Kingston HyperX 8GB" />
+                        </div>
+                        <div class="product-info">
+                            <h3>Kingston HyperX 8GB</h3>
+                            <p class="price">8,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Memory" data-name="Crucial Ballistix 8GB" data-price="7500">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/ram4.jpg" alt="Crucial Ballistix 8GB" />
+                        </div>
+                        <div class="product-info">
+                            <h3>Crucial Ballistix 8GB</h3>
+                            <p class="price">7,500 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Memory" data-name="Corsair Vengeance 16GB" data-price="15000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/ram55.jpg" alt="Corsair Vengeance 16GB" />
+                        </div>
+                        <div class="product-info">
+                            <h3>G.Skill Trident Z5 Neo </h3>
+                            <p class="price">17,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Memory" data-name="G.Skill Trident Z 16GB" data-price="14000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/ram66.jpg" alt="G.Skill Trident Z 16GB" />
+                        </div>
+                        <div class="product-info">
+                            <h3>TeamGroup T-Force Delta RGB DDR5</h3>
+                            <p class="price">18,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Storage Devices Section -->
+            <section class="category-section" id="storage-devices">
+                <h2>Storage Devices</h2>
+                <div class="products-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, auto); gap: 20px;">
+                    <!-- Example storage items -->
+                    <div class="product-card" data-category="Storage Devices" data-name="Samsung 1TB SSD" data-price="20000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/ssd1.jpg" alt="Samsung 1TB SSD" />
+                        </div>
+                        <div class="product-info">
+                            <h3>Samsung 1TB SSD</h3>
+                            <p class="price">20,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Storage Devices" data-name="WD 2TB HDD" data-price="15000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/hdd2.jpg" alt="WD 2TB HDD" />
+                        </div>
+                        <div class="product-info">
+                            <h3>WD 2TB HDD</h3>
+                            <p class="price">15,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Storage Devices" data-name="Seagate 1TB HDD" data-price="14000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/hdd3.jpg" alt="Seagate 1TB HDD" />
+                        </div>
+                        <div class="product-info">
+                            <h3>Seagate 1TB HDD</h3>
+                            <p class="price">14,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Storage Devices" data-name="Crucial 500GB SSD" data-price="12000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/ssd4.jpg" alt="Crucial 500GB SSD" />
+                        </div>
+                        <div class="product-info">
+                            <h3>Crucial 500GB SSD</h3>
+                            <p class="price">12,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Storage Devices" data-name="Kingston 256GB SSD" data-price="8000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/ssd5.webp" alt="Kingston 256GB SSD" />
+                        </div>
+                        <div class="product-info">
+                            <h3>Kingston 256GB SSD</h3>
+                            <p class="price">8,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Storage Devices" data-name="SanDisk 128GB SSD" data-price="6000">
+                        <div class="image-container">
+                            <img src="./ShopNow/images/ssd6.jpg" alt="SanDisk 128GB SSD" />
+                        </div>
+                        <div class="product-info">
+                            <h3>SanDisk 128GB SSD</h3>
+                            <p class="price">6,000 LKR</p>
+                            <label>Quantity:
+                                <input type="number" min="0" value="0" class="quantity-input" />
+                            </label>
+                            <!-- <button class="buy-now-product-btn">Buy Now</button> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Order Summary Table -->
+        <section class="order-summary-section">
+            <h2>Your Order</h2>
+            <table id="order-table">
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Price (LKR)</th>
+                        <th>Quantity</th>
+                        <th>Subtotal (LKR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamically filled -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" style="text-align:right; font-weight:bold;">Total:</td>
+                        <td id="total-price">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="order-buttons">
+                <button id="add-favourites">Add to Favourites</button>
+                <button id="apply-favourites">Apply Favourites</button>
+                <button id="buy-now">Buy Now</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-column">
+                    <h3>About Game Fury</h3>
+                    <p>Game Fury is your ultimate destination for the latest games, high-performance gear, and updates on upcoming releases. Elevate your gaming experience with us.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="../AboutUs/about-us.html">About Us</a></li>
+                        <li><a href="../ShopNow/shop.html">Shop Now</a></li>
+                        <li><a href="../FAQ/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://web.facebook.com/" alt="facebook"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://x.com/" alt="twitter"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.instagram.com/" alt="instagram"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.youtube.com/" alt="youtube"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                    <h3>Newsletter</h3>
+                    <form class="newsletter">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Game Fury. All Rights Reserved. | Designed by Game Fury Team</p>
+            </div>
+        </div>
+    </footer> 
+    <script src="./ShopNow/shop.js"></script>
+    <script>
+        let searchForm = document.querySelector('.search-form');
+
+        document.querySelector('#search-btn').onclick = () =>{
+            searchForm.classList.toggle('active');
+        };
+
+        // Hamburger menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.nav');
+
+        hamburger.onclick = () => {
+            nav.classList.toggle('active');
+        };
+
+
+    </script>
+</body>
+</html>

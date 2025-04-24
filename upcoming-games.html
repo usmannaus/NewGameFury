@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Games - Game Fury</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="./UpcomingGames/upcoming-games.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!-- Header Section -->
+<header>
+    <a href="#" class="logo"><img src="./UpcomingGames/images/logo.png" width="100px"></a> 
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./about-us.html">About Us</a></li>
+        <li><a href="./upcoming-games.html">Upcoming Games</a></li>
+        <li><a href="./console.html">Game Consoles</a></li>
+        <li><a href="./games.html">Games</a></li>
+        <li><a href="./shop.html">Shop Now</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+    </ul>
+    <section class="icon-container">
+        <section class="icon" aria-label="User Profile" tabindex="0">
+            <i class="fas fa-user"></i>
+        </section>
+        <section class="icon" aria-label="Cart" tabindex="0">
+            <i class="fas fa-shopping-cart"></i>
+        </section>
+        <section class="icon" aria-label="Search" tabindex="0" id="search-btn">
+            <i class="fas fa-search"></i>
+        </section>
+        <section class="hamburger" aria-label="Menu" tabindex="0">
+            <i class="fas fa-bars"></i>
+        </section>
+    </section>
+    <section class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </section>    
+</header>
+
+    <main>
+        <section class="intro">
+            <h1>Upcoming Games</h1>
+            <p><span>Stay ahead of the curve with Game Fury.</span> We bring you the latest information on the hottest upcoming game titles, ensuring you never miss a beat in the gaming world. Discover what’s next and plan your gaming adventures!</p>
+        </section>
+
+        <section class="games-gallery">
+            <h2><span>Top Picks</span> of the Month</h2>
+            <section class="game-row">
+                <section class="game">
+                    <img src="./UpcomingGames/images/cod.jpg" alt="Call of Duty 6">
+                    <section class="overlay">Release Date: Jan 20, 2024</section>
+                </section>
+                <section class="game">
+                    <img src="./UpcomingGames/images/ghost.jpg" alt="Ghost of Tsushima">
+                    <section class="overlay">Release Date: Feb 15, 2024</section>
+                </section>
+                <section class="game">
+                    <img src="./UpcomingGames/images/hitman.jpg" alt="Hitman 3">
+                    <section class="overlay">Release Date: Mar 10, 2024</section>
+                </section>
+            </section>
+            
+            <h2><span>Highly</span> Anticipated Games</h2>
+            <section class="game-row">
+                <section class="game">
+                    <img src="./UpcomingGames/images/gta.jpg" alt="GTA 6">
+                    <section class="overlay">Release Date: Apr 25, 2024</section>
+                </section>
+                <section class="game">
+                    <img src="./UpcomingGames/images/watchdogs.jpg" alt="WatchDogs">
+                    <section class="overlay">Release Date: May 30, 2024</section>
+                </section>
+                <section class="game">
+                    <img src="./UpcomingGames/images/battle.jpg" alt="BattleField">
+                    <section class="overlay">Release Date: Jun 12, 2024</section>
+                </section>
+            </section>            
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-column">
+                    <h3>About Game Fury</h3>
+                    <p>Game Fury is your ultimate destination for the latest games, high-performance gear, and updates on upcoming releases. Elevate your gaming experience with us.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="../AboutUs/about-us.html">About Us</a></li>
+                        <li><a href="../ShopNow/shop.html">Shop Now</a></li>
+                        <li><a href="../FAQ/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://web.facebook.com/" alt="facebook"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://x.com/" alt="twitter"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.instagram.com/" alt="instagram"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.youtube.com/" alt="youtube"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                    <h3>Newsletter</h3>
+                    <form class="newsletter">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Game Fury. All Rights Reserved. | Designed by Game Fury Team</p>
+            </div>
+        </div>
+    </footer> 
+    <script>
+        let searchForm = document.querySelector('.search-form');
+
+        document.querySelector('#search-btn').onclick = () =>{
+            searchForm.classList.toggle('active');
+        };
+
+        // Hamburger menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.nav');
+
+        hamburger.onclick = () => {
+            nav.classList.toggle('active');
+        };
+
+
+    </script>
+</body>
+</html>

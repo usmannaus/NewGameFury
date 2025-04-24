@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=sawp');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #050e2d;
+    color: #f0f0f0;
+}
+
+/* Header Section */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 4px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1b2141;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+header .logo {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin: 10px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+header ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #1aeeef; 
+    transition: width 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #1aeeef; 
+}
+
+header ul li a:hover::after {
+    width: 100%; /* Full-width underline on hover */
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    position: relative;
+    margin: 0 15px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    transition: transform 0.2s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    color: #1aeeef; /* Change color to blue on hover */
+}
+
+.icon .cart-preview {
+    display: none;
+    position: absolute;
+    background: #1b2141;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.search-form {
+    position: absolute;
+    top: 115%;
+    right: 1%;
+    background: rgba(30, 30, 30, 0.9); /* Gaming theme dark background with transparency */
+    width: 25rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    border: 2px solid #00d4ff; 
+    border-radius: 5px; /* Smooth corners */
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+    opacity: 0;
+}
+
+.search-form.active {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    color: #fff;
+    background: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+    outline: none;
+    text-transform: none;
+}
+
+.search-form input::placeholder {
+    color: #aaa; /* Placeholder color */
+    font-style: italic;
+}
+
+.search-form label {
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: #00d4ff;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.search-form label:hover {
+    color: #fff;
+    transform: scale(1.2); /* Subtle zoom effect */
+}
+
+/* Hamburger Menu */
+.hamburger {
+    padding: 10px;
+    display: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: #fff;
+    z-index: 1100; /* Ensure it stays above the menu */
+}
+
+/* Active Navigation Menu */
+header .nav.active {
+    position: absolute;
+    top: 70px; /* Position below header */
+    left: 0;
+    right: 0;
+    background: #1b2141;
+    padding: 20px 0; /* Add padding for spacing */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); 
+}
+
+/* Adjust Header When Menu is Active */
+header {
+    z-index: 1050; 
+    background: #1b2141;
+}
+
+/* Navigation Links Style */
+header .nav.active ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add spacing between links */
+}
+
+header .nav.active ul li a {
+    font-size: 1.2rem; /* Larger text for better readability */
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.8); 
+    border-radius: 5px; 
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+header .nav.active ul li a:hover {
+    background: #1aeeef; 
+    color: #050e2d; 
+}
+
+/* For Mobile View */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger menu */
+    }
+
+    header .nav {
+        display: none; 
+    }
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #050e2d;
+    margin-bottom: 20px;
+    padding-top: 150px;
+}
+
+.intro h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #00d4ff;
+}
+
+.intro p {
+    font-size: 18px;
+    font-weight: 700;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.intro p span {
+    color: #00d4ff;
+}
+
+/* Games Gallery Section */
+.games-gallery {
+    padding: 20px;
+}
+
+.games-gallery h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: #00d4ff;
+    margin-bottom: 15px;
+}
+
+.games-gallery h2 span {
+    color: #fff;
+}
+
+.game-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.game-row h2 span {
+    color: #fff;
+}
+
+.game {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: #1a1a2e;
+}
+
+.game img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.game:hover .overlay {
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    background: #10152d;
+    color: #f0f0f0;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px 10px;
+}
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    color: #1aeeef;
+    margin-bottom: 15px;
+}
+
+.footer-column p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 10px 0;
+}
+
+.footer-column ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #1aeeef;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #1aeeef;
+}
+
+.newsletter {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background: #1aeeef;
+    border: none;
+    border-radius: 5px;
+    color: #050e2d;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter button:hover {
+    background: #148eb0;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #1aeeef;
+    padding-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .game-row {
+        flex-direction: column; /* Stack games vertically */
+        align-items: center; 
+    }
+
+    .game {
+        width: 90%; /* Make games take up more width on smaller screens */
+        height: auto; 
+    }
+
+    header .searchbox {
+        width: 100%; 
+    }
+
+    .intro h1 {
+        font-size: 28px; 
+    }
+
+    .intro p {
+        font-size: 16px; 
+    }
+}
+
+
+@media (max-width: 1220px) {
+    header .nav {
+        display: none; /* Hide nav by default on small screens */
+    }
+
+    header .nav.active {
+        display: flex; /* Show nav when active */
+        flex-direction: column; 
+        position: absolute; 
+        top: 80px; 
+        left: 0;
+        right: 0;
+        background: #1b2141;
+        z-index: 1000; /* Ensure it appears above other content */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger menu on small screens */
+    }
+}

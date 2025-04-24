@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peripherals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="./ConsoleGamingPeripherals/console.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="./ConsoleGamingPeripherals/images/logo.png" width="100px"></a> 
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li><a href="./upcoming-games.html">Upcoming Games</a></li>
+            
+            <!-- Dropdown for Consoles and Peripherals -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Game Consoles</a>
+                <ul class="dropdown-menu">
+                    <li><a href="./console.html">Consoles</a></li>
+                    <li><a href="./peripherals.html">Peripherals</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="./games.html">Games</a></li>
+            <li><a href="./shop.html">Shop Now</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+        </ul>
+        <section class="icon-container">
+            <section class="icon" aria-label="User Profile" tabindex="0">
+                <i class="fas fa-user"></i>
+            </section>
+            <section class="icon" aria-label="Cart" tabindex="0">
+                <i class="fas fa-shopping-cart"></i>
+            </section>
+            <section class="icon" aria-label="Search" tabindex="0" id="search-btn">
+                <i class="fas fa-search"></i>
+            </section>
+            <section class="hamburger" aria-label="Menu" tabindex="0">
+                <i class="fas fa-bars"></i>
+            </section>
+        </section>
+        <section class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </section>        
+    </header>    
+
+    <main>
+        <section class="intro">
+            <h1>Peripherals</h1>
+            <p style="color: white;"><span>Discover our range of high-quality peripherals designed to enhance your gaming experience. From headsets to controllers, we have everything you need to take your gaming to the next level.</span></p>
+        </section>
+
+        <section class="product-gallery">
+            <h2><span>Our</span> Collection</h2>
+            <div class="grid-container">
+                <div class="product">
+                    <img src="./ConsoleGamingPeripherals/images/peripheral1.jpg" alt="Peripheral 1">
+                    <div class="price-overlay">Price: $149</div>
+                </div>
+                <div class="product">
+                    <img src="./ConsoleGamingPeripherals/images/peripheral2.jpg" alt="Peripheral 2">
+                    <div class="price-overlay">Price: $449</div>
+                </div>
+                <div class="product">
+                    <img src="./ConsoleGamingPeripherals/images/mouse.jpg" alt="Peripheral 3">
+                    <div class="price-overlay">Price: $89</div>
+                </div>
+                <div class="product">
+                    <img src="./ConsoleGamingPeripherals/images/headset.webp" alt="Peripheral 4">
+                    <div class="price-overlay">Price: $199</div>
+                </div>
+                <div class="product">
+                    <img src="./ConsoleGamingPeripherals/images/joy.jpg" alt="Peripheral 5">
+                    <div class="price-overlay">Price: $149</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-column">
+                    <h3>About Game Fury</h3>
+                    <p>Game Fury is your ultimate destination for the latest games, high-performance gear, and updates on upcoming releases. Elevate your gaming experience with us.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="../AboutUs/about-us.html">About Us</a></li>
+                        <li><a href="../ShopNow/shop.html">Shop Now</a></li>
+                        <li><a href="../FAQ/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://web.facebook.com/" alt="facebook"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://x.com/" alt="twitter"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.instagram.com/" alt="instagram"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.youtube.com/" alt="youtube"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                    <h3>Newsletter</h3>
+                    <form class="newsletter">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Game Fury. All Rights Reserved. | Designed by Game Fury Team</p>
+            </div>
+        </div>
+    </footer> 
+    <script>
+        let searchForm = document.querySelector('.search-form');
+
+        document.querySelector('#search-btn').onclick = () =>{
+            searchForm.classList.toggle('active');
+        };
+
+        // Hamburger menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.nav');
+
+        hamburger.onclick = () => {
+            nav.classList.toggle('active');
+        };
+
+        // JavaScript to toggle dropdown visibility on click
+        document.querySelectorAll('.dropdown > a').forEach(item => {
+            item.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default link behavior
+                const dropdown = this.parentElement; // Get the parent <li> element
+                dropdown.classList.toggle('show'); // Toggle the 'show' class to show/hide the dropdown
+            });
+        });
+
+
+
+    </script>
+</body>
+</html>

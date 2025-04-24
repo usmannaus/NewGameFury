@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./PaymentPage/payment.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="#" class="logo"><img src="./ShopNow/images/logo.png" width="100px"></a> 
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li><a href="./upcoming-games.html">Upcoming Games</a></li>
+            <li><a href="./console.html">Game Consoles</a></li>
+            <li><a href="./games.html">Games</a></li>
+            <li><a href="./shop.html">Shop Now</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+        </ul>
+        <section class="icon-container">
+            <section class="icon" aria-label="User Profile" tabindex="0">
+                <i class="fas fa-user"></i>
+            </section>
+            <section class="icon" aria-label="Cart" tabindex="0">
+                <i class="fas fa-shopping-cart"></i>
+            </section>
+            <section class="icon" aria-label="Search" tabindex="0" id="search-btn">
+                <i class="fas fa-search"></i>
+            </section>
+            <section class="hamburger" aria-label="Menu" tabindex="0">
+                <i class="fas fa-bars"></i>
+            </section>
+        </section>
+        <section class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </section>        
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Order Summary Section -->
+            <section class="order-summary-section fade-in">
+                <div class="section-header">Your Order</div>
+                <div class="table-container">
+                    <table id="order-summary-table">
+                        <thead>
+                            <tr>
+                                <th>Item Name</th>
+                                <th>Price (LKR)</th>
+                                <th>Quantity</th>
+                                <th>Subtotal (LKR)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Filled dynamically -->
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" style="text-align:right; font-weight:bold;">Total:</td>
+                                <td id="order-total-price">0</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+    
+            <!-- Order Form Section -->
+            <section class="order-form-section fade-in delay-1">
+                <div class="section-header">Enter Your Details</div>
+                <form id="order-form">
+                    <fieldset>
+                        <legend>Personal Details</legend>
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="fullName" required />
+    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+    
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required />
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>Delivery Details</legend>
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+    
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" required />
+    
+                        <label for="postal-code">Postal Code:</label>
+                        <input type="text" id="postal-code" name="postalCode" required />
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>Payment Information</legend>
+                        <label for="card-number">Card Number:</label>
+                        <input type="text" id="card-number" name="cardNumber" placeholder="1234 5678 9012 3456" pattern="(\d{4}[ -]?){3}\d{4}" maxlength="19" inputmode="numeric" required />
+    
+                        <label for="expiry-date">Expiry Date (MM/YY):</label>
+                        <input type="text" id="expiry-date" name="expiryDate" pattern="(0[1-9]|1[0-2])/\d{2}" placeholder="MM/YY" required />
+    
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" pattern="\d{3}" maxlength="3" required />
+                    </fieldset>
+    
+                    <button type="submit" id="pay-button">Pay</button>
+                </form>
+                <div id="thank-you-message" style="display:none;"></div>
+            </section>
+        </div>
+    </main>      
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-column">
+                    <h3>About Game Fury</h3>
+                    <p>Game Fury is your ultimate destination for the latest games, high-performance gear, and updates on upcoming releases. Elevate your gaming experience with us.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="../AboutUs/about-us.html">About Us</a></li>
+                        <li><a href="../ShopNow/shop.html">Shop Now</a></li>
+                        <li><a href="../FAQ/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://web.facebook.com/" alt="facebook"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://x.com/" alt="twitter"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.instagram.com/" alt="instagram"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.youtube.com/" alt="youtube"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                    <h3>Newsletter</h3>
+                    <form class="newsletter">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Game Fury. All Rights Reserved. | Designed by Game Fury Team</p>
+            </div>
+        </div>
+    </footer> 
+
+    <script src="./PaymentPage/payment.js"></script>
+    <script>
+        let searchForm = document.querySelector('.search-form');
+
+        document.querySelector('#search-btn').onclick = () =>{
+            searchForm.classList.toggle('active');
+        };
+
+        const hamburger = document.querySelector('.hamburger'); 
+        const nav = document.querySelector('.nav');
+
+        hamburger.onclick = () => {
+            nav.classList.toggle('active');
+        };
+    </script>
+</body>
+</html>
